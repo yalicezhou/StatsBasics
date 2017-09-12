@@ -1,0 +1,33 @@
+# 1. We have 1000 users. Now we have a new feature (increase the size of the “like” button). We plan to roll out this feature to all of users, but gradually. Here’s our method:
+
+Day 1, we pick 10 random users, show them the new button.
+Day 2, we pick another 10 users, show them the new button.
+…
+Day 100, we pick the rest of 10 users, show them the new button.
+Question: how many days does it take for an average user to be picked?
+50
+
+# 2. Now you have a list of 1000 numbers. How do you find out the outliers of these numbers?
+Plot all the numbers in ascending order on a graph so that it shows up as a pattern. Then calculate the 25th percentile and 75th percentile. Use the 25th percentile - 150%IQR and 75th percentile + 150%IQR to get the normal range of the list of numbers. Anything falls outside of the pattern and the range would be outliers. 
+
+# 3. There are 10 coins. We know that 1 is biased, 9 are fair. The biased coin has p>0.5 to be head. I picked up one coin and toss it 3 times: head, head, and tail. What’s the probability that the coin I picked is the biased one?
+Bayes’s theorem
+P(H|E) = (P(E|H)*P(H)/P(E)) = 0.5*0.1/0.9 = 5.56%
+
+# 4. Explain type I error, type II error, p-value to a non-technical person.
+Type I error is when you deny something when you should have accepted. 
+Type II error is when you accept something when you should have denied.
+P-value is the likelihood of what you thought happens - the lower the P-value is, the less likely what you thought would happen
+
+# 5. I flip a coin 100 times, 70 times it is head, and 30 times it is tail. Is the coin fair? 
+Give a yes/no answer and explain the process.
+It’s hard to say.. P value in this case is 0.3, which is not small enough to deny the null hypothesis, however, the sample size is not big enough either say it is a fair coin or not.
+
+# 6. Mike, Lily and Jim are all trying to test if a coin is fair, and each person tries to do this by tossing the coin 10 times and make conclusion based on the toss results. What are the likelihood that at least one of them will say that the coin is not fair, if the coin is in reality, fair?
+Calculate the likelihood and explain why you reach this number.
+
+# 7. Google has launched another messaging app. How do you measure the success of this app?
+(1) User engagement
+  a. Daily users number
+  b. New users increasing rate
+  c. Active user number
